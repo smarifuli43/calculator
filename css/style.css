@@ -1,0 +1,92 @@
+.calc-container{
+    background-color: rgb(99, 99, 99);
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  /* margin: auto; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#zero{
+  grid-area: zero;
+}
+#one{
+  grid-area: one;
+}
+#two{
+  grid-area: two;
+}
+#three{
+  grid-area: three;
+}
+#four{
+  grid-area: four;
+}
+#five{
+  grid-area: five;
+}
+#six{
+  grid-area: six;
+}
+#seven{
+  grid-area: seven;
+}
+#eight{
+  grid-area: eight;
+}
+#nine{
+  grid-area: nine;
+}
+
+#plus{
+  grid-area: plus;
+}
+#minus{
+  grid-area: minus;
+}
+#multiply{
+  grid-area: multiply;
+}
+#division{
+  grid-area: division;
+}
+#backspace{
+  grid-area: backspace;
+}
+#clear{
+  grid-area: clear;
+}
+#point{
+  grid-area: point;
+}
+#equal{
+  grid-area: equal;
+}
+#root{
+  grid-area: root;
+}
+.btn-container{
+
+ display: grid;
+ grid-template-areas: 'plus minus division multiply'
+                      'one two three root'
+                      'four five six equal'
+                      'seven eight nine equal'
+                      'point zero backspace clear';
+gap: 10px;
+font-size: 26px;
+}
+
+.btn{
+  font-size: 20px ;
+}
+#display{
+  width: 100%;
+  background-color: rgb(224, 224, 224);
+  padding: 40px 10px 10px;
+  outline: none;
+  border: 1px solid rgb(32, 32, 32);
+  border-radius: 2px;
+}
