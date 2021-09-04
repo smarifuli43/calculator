@@ -1,92 +1,105 @@
-.calc-container{
-    background-color: rgb(99, 99, 99);
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.calc-container {
+  background-color: rgb(99, 99, 99);
   padding: 20px;
   border-radius: 5px;
   width: 400px;
-  /* margin: auto; */
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-#zero{
+#zero {
   grid-area: zero;
 }
-#one{
+#one {
   grid-area: one;
 }
-#two{
+#two {
   grid-area: two;
 }
-#three{
+#three {
   grid-area: three;
 }
-#four{
+#four {
   grid-area: four;
 }
-#five{
+#five {
   grid-area: five;
 }
-#six{
+#six {
   grid-area: six;
 }
-#seven{
+#seven {
   grid-area: seven;
 }
-#eight{
+#eight {
   grid-area: eight;
 }
-#nine{
+#nine {
   grid-area: nine;
 }
 
-#plus{
+#plus {
   grid-area: plus;
 }
-#minus{
+#minus {
   grid-area: minus;
 }
-#multiply{
+#multiply {
   grid-area: multiply;
 }
-#division{
+#division {
   grid-area: division;
 }
-#backspace{
+#backspace {
   grid-area: backspace;
 }
-#clear{
+#clear {
   grid-area: clear;
 }
-#point{
+#point {
   grid-area: point;
 }
-#equal{
+#equal {
   grid-area: equal;
 }
-#root{
+#root {
   grid-area: root;
 }
-.btn-container{
-
- display: grid;
- grid-template-areas: 'plus minus division multiply'
-                      'one two three root'
-                      'four five six equal'
-                      'seven eight nine equal'
-                      'point zero backspace clear';
-gap: 10px;
-font-size: 26px;
+#btn-container {
+  display: grid;
+  grid-template-areas:
+    'plus minus division multiply'
+    'one two three root'
+    'four five six equal'
+    'seven eight nine equal'
+    'point zero backspace clear';
+  gap: 10px;
+  font-size: 26px;
 }
 
-.btn{
-  font-size: 20px ;
+.btn {
+  font-size: 22px;
 }
-#display{
+#display {
   width: 100%;
   background-color: rgb(224, 224, 224);
   padding: 40px 10px 10px;
   outline: none;
   border: 1px solid rgb(32, 32, 32);
   border-radius: 2px;
+  font-size: 22px;
+}
+
+/* for mobile */
+@media (max-width: 500px) {
+  .calc-container {
+    width: calc(100% - 32px);
+  }
 }
